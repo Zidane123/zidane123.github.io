@@ -1,0 +1,368 @@
+html,body {
+
+    font-family: 'montserratregular';
+    width:100%;
+    margin: auto;
+    padding: 0;
+    min-width: 960px;
+    color:#fff;
+    font-size: 100%;
+    position: relative;
+
+
+}
+body {
+
+}
+.first {
+    background-color: #f5b218;
+    width:100%;
+    height:1024px;
+    position: relative;
+}
+.second {
+    background-color: #fff;
+    width:100%;
+    height:1024px;
+    position: relative;
+}
+.wrapper {
+
+    z-index: 100;
+    width:100%;
+}
+.wrapper.hide {
+    display: none;
+}
+* html .wrapper {
+
+
+}
+.f_page {
+    margin: 0 auto;
+    width: 960px;
+    padding-top:80px;
+
+}
+.block {
+    text-align: right;
+    margin-bottom: 50px;
+    height:800px;
+    position: relative;
+
+}
+.block {
+    width: 510px;
+    padding-right: 50px;
+}
+.textdiv {
+    position: relative;
+}
+.textdiv,.animatediv {
+    width: 400px;
+    height: 800px;
+}
+.animatediv {
+    opacity: 0;
+    position: absolute;
+
+    left: -20px;
+}
+.active .animatediv {
+    opacity: 1;
+    left: 0;
+    transition: 0.8s 0.7s;
+
+}
+
+.active.movie .block .img1{
+    right: 90px;
+    opacity: 0;
+    transition: 0.8s 0.7s;
+}
+.active.movie .block .img2 {
+    right: 90px;
+    opacity: 0;
+    transition: 1s 0.5s;
+}
+.active.movie .animatediv {
+    opacity: 0;
+    left: -20px;
+    transition: 0.8s 0.7s;
+
+}
+.block,.textdiv {
+    position: relative;
+    float:left;
+}
+.block .img1 {
+    position: absolute;
+    right: 90px;
+    z-index: 10;
+}
+.active .block .img1 {
+    right:50px;
+    transition:right 1s;
+}
+.block .img2 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+    z-index: 5;
+}
+.active .block .img2 {
+    right: 230px;
+    transition:right 1s 0.5s;
+}
+.clear {
+    clear: both;
+}
+.title {
+    width: 405px;
+    margin-left: -10px;
+    font-size: 120px;
+    line-height: 120px;
+    font-family: 'montserratbold';
+}
+.subtitle {
+    width: 400px;
+    font-size: 30px;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    line-height: 40px;
+    padding: 13px 0;
+    font-family: 'montserratbold';
+}
+.text {
+    font-size: 15px;
+    width: 400px;
+    padding-top: 13px;
+    padding-bottom: 35px;
+}
+.textdiv > a {
+    padding-bottom: 14px;
+}
+.top {
+     height: 9px;
+     background-color: #d09714;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+ }
+.bottom {
+    height: 9px;
+    background-color: #d09714;
+    bottom:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.second .top, .second .bottom {
+    background-color: #d0d0d0;
+}
+.pagination {
+    position: absolute;
+    top:50%;
+    margin-top: -40px;
+    width: 18px;
+    left: 32px;
+    cursor: pointer;
+    z-index: 400;
+}
+.pagination .active_pagination {
+    cursor: default;
+}
+.pagination > div {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 8px;
+    background-color: #d09714;
+}
+.pagination .active_pagination, .pagination > div:hover {
+    background-color: #fff;
+}
+.secon.pagination > div {
+    background-color: #d0d0d0;
+}
+.secon.pagination .active_pagination,.secon.pagination > div:hover {
+    background-color: #666666;
+}
+
+.wrapper {
+    display: block;
+}
+.s_text {
+
+    background: url("../images/arrow.png") 0 230px no-repeat;
+    padding-left: 120px;
+    position: relative;
+}
+.s_title {
+    width: 750px;
+    font-size: 34px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #f2a900;
+    font-family: 'montserratbold';
+}
+.s_line {
+    width: 380px;
+    height: 4px;
+    background-color:#666666;
+    margin: 15px 0 15px 0;
+}
+.s_descr {
+    width: 610px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #666666;
+}
+.s_seo_name {
+    color:#f2a900;
+    font-size: 24px;
+    line-height: 38px;
+    font-family: 'montserratbold';
+}
+.s_ceo {
+    background: url("../images/pic.png") right 0 no-repeat;
+    text-align: right;
+    padding-right: 110px;
+    margin-right: 90px;
+    margin-top: 100px;
+    padding-bottom: 55px;
+}
+.s_seo_seo {
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+}
+.s_seo_text {
+    font-size: 14px;
+    color: #666666;
+}
+.pagination.horizontal > div {
+    float:left;
+    margin-right: 8px;
+
+}
+.pagination.horizontal {
+    bottom: 20px;
+    top:auto;
+    left:50%;
+    width: 80px;
+    margin-left: -40px;
+}
+.t_title {
+
+    font-family: 'montserratbold';
+    font-size: 160px;
+    text-align: center;
+}
+.t_subtitle {
+    font-family: 'montserratbold';
+    font-size: 30px;
+    text-align: center;
+
+}
+.t_line {
+    width: 380px;
+    margin: 30px auto 30px auto;
+    height: 4px;
+    background-color: #fff;
+}
+.t_text {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    width: 780px;
+    margin: 0 auto;
+}
+.t_buttons {
+    width: 396px;
+    margin: 215px auto 0 auto;
+}
+.t_buttons > a {
+    width: 192px;
+    float: left;
+}
+.t_buttons > a:first-child {
+    margin-right: 10px;
+}
+.t_soc_links {
+    margin-top: 141px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.t_soc_links > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding:0 7px;
+}
+
+.f_page.t_page {
+    text-align: center;
+}
+.f_page.t_page > span {
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.3;
+    color: #000;
+    margin-bottom: 15px;
+}
+.s_text.f_text {
+    padding-left: 0px;
+    background-image: none;
+    opacity: 0;
+    margin-left: -50px;
+}
+.active .f_text {
+    opacity: 1;
+    margin-left: 0px;
+    transition: 0.7s 0.3s;
+}
+.s_text.f_text .s_title {
+    font-size: 50px;
+    line-height: 54px;
+    width: 870px;
+}
+.mobi1 {
+    margin-top: -200px;
+    margin-left: -50px;
+}
+.horslide.active img{
+    margin-left: 0px;
+    transition: 1s;
+}
+.button {
+    display: inline-block;
+    height: 42px;
+    margin-top: 25px;
+    padding: 0 28px;
+    background-color: #f5b218;
+    line-height: 42px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.thirdw,.secw {
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+.firstw {
+    position: absolute;
+    bottom: 1px;
+}
+.wr {
+    position: relative;
+    overflow: hidden;
+}
+.active {
+    z-index: 100;
+}
+.pagination.horizontal {
+    display: none;
+}
